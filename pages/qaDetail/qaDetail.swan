@@ -1,0 +1,12 @@
+<view class="container">
+    <!--to do-->
+    <view class="queTitle">问题标题</view>
+    <view class="queDescribe">问题描述</view>
+    <view class="ansInfoView">
+        回答人view
+        <image>
+            
+        </image>
+    </view>
+    <view class="ansDescribe">回答详情</view>
+</view>

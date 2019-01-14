@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/gameCenterList/gameCenterList",
+        "pages/gameCenterDetail/gameCenterDetail",
+        "pages/videoDetail/videoDetail",
+        "pages/qaDetail/qaDetail"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    }
+}

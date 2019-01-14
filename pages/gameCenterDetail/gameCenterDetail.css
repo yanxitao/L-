@@ -1,0 +1,36 @@
+
+.wrap1 {
+    height: 100%;
+    width: 100%;
+
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+}
+
+.title-view {
+    width: 93%;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15pt; 
+}
+
+.updatetime-view {
+    width: 93%;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 8pt; 
+    color: #a0a0a0;
+}
+
+.content-view {
+    width: 93%;
+    margin-top: 10px;
+    justify-content: top;
+    mask-mode: aspectFit;
+}
+/* 
+.img::after {
+    width: 300px;
+    mask-mode: widthFix; 
+} */

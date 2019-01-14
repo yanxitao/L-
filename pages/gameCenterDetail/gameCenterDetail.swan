@@ -1,0 +1,22 @@
+<import src="../../bdParse/bdParse.swan" />
+   
+    <view class="wrap1">
+
+        <view class="title-view">
+            {{ detailModel.title }}
+        </view>
+
+        <view class="updatetime-view">
+            {{ detailModel.updated_at }}
+        </view>
+
+        <!-- <view class="content-view"> -->
+            <template class="content-view" is="bdParse" data="{{ {bdParseData:article.nodes} }}" />
+            <!-- {{ detailModel.content }} -->
+            <!-- {{nodes}} -->
+            <!-- <p><span style="font-family: 宋体; font-size: 10.5pt;">在战舰世界闪击战中，若要使用航母进行战斗，就必须要使用到飞机了，其中大部分作战时间其实都是都是操作着航母上面的舰载机，一些新手玩家们刚刚使用航母的时候发现并没有能够发挥出应有的作用，所以说对于舰载机的操作技术是否熟练那么就很重要了，那么下面就为玩家们介绍舰载机的操作。</span><br /></p><p style="text-align: center;"><span style="font-family: 宋体; font-size: 10.5pt;"><image src="http://c13.eoemarket.net/upload/images/seocms/20181129/1003385bff48fa8cb95.jpg" alt="" /><br /></span></p><p><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;">首先就需要了解的航母的基本操作，移动和射击的按键其实相差无几，只是在界面的右下角你可以看见多了一个飞机按钮，然后点进去就是上帝视角了，在左下角显示着飞行编队的按钮，上面分列着各种不同类型的飞机，然后派遣出你需要的飞机组成一个战斗群进行战斗。合理的利用各种飞机不同的特点对敌人的战舰造成一定的压制和损害同时抢夺制空权，主导整一个战局的走向。</span></span></p><p style="text-align: center;"><span style="font-family:宋体;font-size:10.5000pt;"><span style="font-family:宋体;"><image src="http://c16.eoemarket.net/upload/images/seocms/20181129/1003595bff490fb5bc3.jpg" alt="" /><br /></span></span></p> -->
+        <!-- </view> -->
+        <!-- <rich-text class="content-view" nodes="{{ nodes }}"> -->
+            
+        </rich-text>
+    </view>

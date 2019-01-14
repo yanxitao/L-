@@ -1,0 +1,8 @@
+<view class="container">
+    <!--to do-->
+    <view class="videoTitle">视频标题</view>
+
+    <view class="videoPlayer">
+        <video id="myde" src="{{src}}" controls bindplay="play" bindpause="pause" bindfullscreenchange="fullscreen" bindended="ended" autoplay="{{autoplay}}" muted="{{muted}}"></video>
+    </view>
+</view>

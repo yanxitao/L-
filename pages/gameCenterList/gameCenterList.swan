@@ -1,0 +1,37 @@
+ <view class="wrap">
+    <scroll-view 
+        scroll-y
+        class="scroll-view"
+        lower-threshold="10"
+        upper-threshold="10"
+        bind:scrolltolower="lower"
+        bind:scrolltoupper="refresh"
+        style="height=500px">
+
+        <navigator class="cell-content" s-for="item in contentlist" url="../gameCenterDetail/gameCenterDetail?article_id={{item.article_id}}" hover-class="navigator-hover">
+        <!-- <button class="cell-content" bind:tap="navigateTo" type="primary" hover-stop-propagation="true"> -->
+   
+            <view class="cell-container"> 
+            
+                <view class="cell-textview"> 
+                    <view class="cell-contentTextView">{{item.title}}</view>  
+                    <view class="cell-contentTimeView">{{item.updated_at}}</view>  
+                </view>
+
+                <view class="cell-imageview">
+                    <image class="cell-image" src="{{item.img}}"></image>
+                </view>
+            
+            </view>
+
+            <view class="cell-line"></view>
+        <!-- </button> -->
+        </navigator>
+
+
+        <!-- <view id="one" class="bg-red">view1</view>
+        <view id="two" class="bg-green">view2</view>
+        <view id="three" class="bg-yellow">view3</view>
+        <view id="four" class="bg-blue">view4</view> -->
+    </scroll-view>
+</view>

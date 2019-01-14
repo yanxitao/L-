@@ -1,0 +1,90 @@
+<view class="container">
+    <!--to do-->
+
+    <view class='topTabSwiper'>
+        <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>文章</view>
+        <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>视频</view>
+        <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>问答</view>
+    </view>
+
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+        <swiper-item>
+            <scroll-view 
+            scroll-y
+            class="scroll-view"
+            lower-threshold="10"
+            upper-threshold="10"
+            bind:scrolltolower="lower"
+            bind:scrolltoupper="refresh"
+            style="height=500px">
+                <navigator class="cell-content" s-for="item in contentlist" url="../gameCenterDetail/gameCenterDetail?article_id={{item.article_id}}" hover-class="navigator-hover">        
+                    <view class="cell-container"> 
+                        <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view>
+                        <view class="cell-textview"> 
+                            <view class="cell-contentTextView">{{item.title}}</view>  
+                            <view class="cell-contentTimeView">{{item.updated_at}}</view>  
+                        </view>
+                        <!-- <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view> -->
+                    </view>
+                    <view class="cell-line"></view>
+                </navigator>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view 
+            scroll-y
+            class="scroll-view"
+            lower-threshold="10"
+            upper-threshold="10"
+            bind:scrolltolower="lower"
+            bind:scrolltoupper="refresh"
+            style="height=500px">
+                <navigator class="cell-content" s-for="item in contentlist" url="../videoDetail/videoDetail?article_id={{item.article_id}}" hover-class="navigator-hover">        
+                    <view class="cell-container"> 
+                        <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view>
+                        <view class="cell-textview"> 
+                            <view class="cell-contentTextView">{{item.title}}</view>  
+                            <view class="cell-contentTimeView">{{item.updated_at}}</view>  
+                        </view>
+                        <!-- <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view> -->
+                    </view>
+                    <view class="cell-line"></view>
+                </navigator>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view 
+            scroll-y
+            class="scroll-view"
+            lower-threshold="10"
+            upper-threshold="10"
+            bind:scrolltolower="lower"
+            bind:scrolltoupper="refresh"
+            style="height=500px">
+                <navigator class="cell-content" s-for="item in contentlist" url="../qaDetail/qaDetail?article_id={{item.article_id}}" hover-class="navigator-hover">        
+                    <view class="cell-container"> 
+                        <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view>
+                        <view class="cell-textview"> 
+                            <view class="cell-contentTextView">{{item.title}}</view>  
+                            <view class="cell-contentTimeView">{{item.updated_at}}</view>  
+                        </view>
+                        <!-- <view class="cell-imageview">
+                            <image class="cell-image" src="{{item.img}}"></image>
+                        </view> -->
+                    </view>
+                    <view class="cell-line"></view>
+                </navigator>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

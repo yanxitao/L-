@@ -1,0 +1,89 @@
+
+.wrap {
+    height: 100%;
+    font-size: .16rem;
+}
+
+.scroll-view {
+    height: 100vh;
+    padding: 0rem;
+    font-size: 0;
+}
+
+.cell-content {
+    height: 100px;
+    width: 100vm;
+    /* background-color: aqua; */
+    /* margin-bottom: 10px; */
+    /* padding: .14rem 0; */
+    border-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.cell-container {
+    height: 99px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    flex-flow:row;
+}
+
+.cell-textview {
+    height: 99px;
+    width: 62%;
+    color: black;
+    text-decoration-color: black;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.cell-contentTextView {
+    height: 63px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    text-decoration-color: black;
+    text-align: left;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.cell-contentTimeView {
+    margin-left: 11px;
+    color: #a0a0a0;
+    font-size: 10pt;
+}
+
+.cell-imageview {
+    height: 80%;
+    width: 38%;
+    /* margin-right: 0px; */
+    /* margin-left: 30rpx; */
+    /* vertical-align: right; */
+    /* background-color: red; */
+}
+
+.cell-image {
+    width: 80%;
+    height: 100%;
+    mask-mode: aspectFit;
+    float: right;
+    margin-right: 10px;
+}
+
+.cell-line {
+    /* margin-bottom: 0.5px; */
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 93%;
+}
+
+button::after {
+    border: none
+}
+
